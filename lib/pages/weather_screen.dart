@@ -3,9 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_wetter_application_1/additional_info_item.dart';
 import 'package:flutter_wetter_application_1/hourly_forecast_item.dart';
-
 import 'package:http/http.dart' as http;
-
 import '../geheim.dart';
 
 class WeatherScreen extends StatefulWidget {
@@ -131,7 +129,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             const SizedBox(
               height: 8,
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -205,7 +203,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             const SizedBox(
               height: 9,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment
                   .spaceAround, //der Vorteil von MainAxisAlignment ist das, dass wir nicht für jedes Element separate Padding machen müssen
               children: [
