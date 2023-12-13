@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HourlyForecastItem extends StatelessWidget {
   final String time;
   final String temperature;
@@ -30,6 +29,8 @@ class HourlyForecastItem extends StatelessWidget {
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(
               height: 9,
